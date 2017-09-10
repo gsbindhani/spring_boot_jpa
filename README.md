@@ -1,4 +1,4 @@
-# spring_boot_jpa
+ # springBoot + Rest + jpa
 
 -- This project has been developed using Spring boot with JPA in addition with
 1. SpringBoot with Rest
