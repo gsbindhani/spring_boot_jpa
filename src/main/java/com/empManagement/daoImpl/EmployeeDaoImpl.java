@@ -30,7 +30,7 @@ public class EmployeeDaoImpl{
 	
 	public EmployeeDao saveEmployee(EmployeeDao employeeDao) {
 		//Bidirectional mapping to have foreignKey relation
-		employeeDao.getAddressDao().stream().forEach(s -> s.setEmployeeDao(employeeDao));
+		employeeDao.getAddresses().stream().forEach(address -> address.setEmployeeDao(employeeDao));
 		
 		return employeeRepository.save(employeeDao);
 	}

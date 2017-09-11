@@ -30,9 +30,9 @@ public class EmployeeDao {
 	@Column(name="EMP_NAME")
 	private String empName;
 	@Column(name="P_PH_NO",unique=true,nullable=false)
-	private long pPhNo;
+	private String pPhNo;
 	@Column(name="S_PH_NO")
-	private long sPhNo;
+	private String sPhNo;
 	@Column(name="EMAIL_ID",unique=true,nullable=false)
 	private String emailId;
 	
@@ -64,19 +64,19 @@ public class EmployeeDao {
 		this.addresses = addresses;
 	}
 
-	public long getpPhNo() {
+	public String getpPhNo() {
 		return pPhNo;
 	}
 
-	public void setpPhNo(long pPhNo) {
+	public void setpPhNo(String pPhNo) {
 		this.pPhNo = pPhNo;
 	}
 
-	public long getsPhNo() {
+	public String getsPhNo() {
 		return sPhNo;
 	}
 
-	public void setsPhNo(long sPhNo) {
+	public void setsPhNo(String sPhNo) {
 		this.sPhNo = sPhNo;
 	}
 
