@@ -37,7 +37,7 @@ public class EmployeeDao {
 	private String emailId;
 	
 	@OneToMany(mappedBy="employeeDao", cascade=CascadeType.ALL, fetch=FetchType.EAGER)
-	private Set<AddressDao> addressDao; 
+	private Set<AddressDao> addresses; 
 	
 	public EmployeeDao(){
 		
@@ -55,11 +55,13 @@ public class EmployeeDao {
 	public void setEmpId(long empId) {
 		this.empId = empId;
 	}
-	public Set<AddressDao> getAddressDao() {
-		return addressDao;
+
+	public Set<AddressDao> getAddresses() {
+		return addresses;
 	}
-	public void setAddressDao(Set<AddressDao> addressDao) {
-		this.addressDao = addressDao;
+
+	public void setAddresses(Set<AddressDao> addresses) {
+		this.addresses = addresses;
 	}
 
 	public long getpPhNo() {

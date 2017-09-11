@@ -12,6 +12,7 @@ import javax.persistence.Table;
 
 import com.empManagement.entityManager.EntityIdResolver;
 import com.fasterxml.jackson.annotation.JsonIdentityInfo;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.ObjectIdGenerators;
 
 @Entity
@@ -43,6 +44,7 @@ public class AddressDao {
 	
 	@ManyToOne(cascade=CascadeType.ALL) 
 	@JoinColumn(name="EMP_ID")
+	@JsonIgnore
 	private EmployeeDao employeeDao;
 	
 	public AddressDao(){
