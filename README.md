@@ -1,4 +1,4 @@
- # springBoot + Rest + jpa
+# SpringBoot example with Rest and Jpa
 
 -- This project has been developed using Spring boot with JPA in addition with
 1. SpringBoot with Rest
